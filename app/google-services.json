@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "906193267360",
+    "firebase_url": "https://hackatron-49301.firebaseio.com",
+    "project_id": "hackatron-49301",
+    "storage_bucket": "hackatron-49301.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906193267360:android:edfa10b94794a6a40b77c5",
+        "android_client_info": {
+          "package_name": "com.androlord.studentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906193267360-uet39ptbi0bi2cvhm72m7m0lbgct9hmh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androlord.studentapp",
+            "certificate_hash": "c330a061edb8dad1bfc6f21b2a1a4913d6baf257"
+          }
+        },
+        {
+          "client_id": "906193267360-cgeo8p1it152lctgsih2ki99fhikufph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1-ZJ4msxSs2o0NS1_CmvIq9x_VGElP44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906193267360-cgeo8p1it152lctgsih2ki99fhikufph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906193267360:android:504f7c17f50cbe570b77c5",
+        "android_client_info": {
+          "package_name": "com.intern.hackatron"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906193267360-vamrn5n1aj7d8bdihtr1n18rl3bb7ggv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.intern.hackatron",
+            "certificate_hash": "935ed10472a42c8bfaa4ceb05b97834a072646ea"
+          }
+        },
+        {
+          "client_id": "906193267360-cgeo8p1it152lctgsih2ki99fhikufph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1-ZJ4msxSs2o0NS1_CmvIq9x_VGElP44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906193267360-cgeo8p1it152lctgsih2ki99fhikufph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
