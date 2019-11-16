@@ -11,9 +11,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.androlord.studentapp.Authentication.LoginActivity;
+import com.androlord.studentapp.Funtions.UploadPdf;
 import com.androlord.studentapp.Funtions.ViewAttendence;
 import com.androlord.studentapp.Funtions.ViewMarks;
 import com.google.firebase.auth.FirebaseAuth;
@@ -88,12 +90,12 @@ public class MainActivity extends AppCompatActivity {
             init();
             tempcode();
         }
-            Toast.makeText(MainActivity.this,"Welcome"+currentUser.getEmail(),Toast.LENGTH_LONG);
+
     }
 
     private void tempcode() {
 
-        Button b=findViewById(R.id.view_attendence),b2=findViewById(R.id.view_marks);
+        LinearLayout b=findViewById(R.id.view_attendence),b2=findViewById(R.id.view_marks);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -124,6 +126,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        final LinearLayout studymaterial=findViewById(R.id.studymaterial);
+        studymaterial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, UploadPdf.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void init() {
@@ -133,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         String email="";
         email = mAuth.getCurrentUser().getEmail().toString();
+        Log.d("ak47", "init: "+"StudentList/"+email.substring(0,email.indexOf('@')));
         DatabaseReference myRef = database.getReference("StudentList/"+email.substring(0,email.indexOf('@')));
 
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {

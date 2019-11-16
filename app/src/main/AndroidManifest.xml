@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Funtions.ViewMarks"></activity>
+        <activity android:name=".Funtions.ViewPdf"></activity>
+        <activity android:name=".Funtions.UploadPdf" />
+        <activity android:name=".Funtions.Uploadpdf" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Funtions.ViewMarks" />
         <activity android:name=".Funtions.ViewAttendence" />
         <activity android:name=".Authentication.SignUp" />
         <activity android:name=".Authentication.LoginActivity" />

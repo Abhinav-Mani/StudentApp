@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 else
                 {
+                    Log.d("ak47", "onClick: "+email.getText().toString().trim()+"->"+password.getText().toString().trim());
                     mAuth.signInWithEmailAndPassword(email.getText().toString().trim(), password.getText().toString().trim())
                             .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
